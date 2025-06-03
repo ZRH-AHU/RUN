@@ -6,7 +6,7 @@
 
 [[Paper](https://arxiv.org/abs/2501.18783)] [[Models & Results](https://drive.google.com/drive/folders/1rA8RfYDmEkUESsRAEgVVqCj5ImkRNTsE?usp=sharing)]
 
->**Abstract:** Existing concealed object segmentation (COS) methods frequently utilize reversible strategies to address uncertain regions. However, these approaches are typically restricted to the mask domain, leaving the potential of the RGB domain underexplored. To address this, we propose the Reversible Unfolding Network (RUN), which applies reversible strategies across both mask and RGB domains through a theoretically grounded framework, enabling accurate segmentation. RUN first formulates a novel COS model by incorporating an extra residual sparsity constraint to minimize segmentation uncertainties. The iterative optimization steps of the proposed model are then unfolded into a multistage network, with each step corresponding to a stage. Each stage of RUN consists of two reversible modules: the Segmentation-Oriented Foreground Separation (SOFS) module and the Reconstruction-Oriented Background Extraction (ROBE) module. SOFS applies the reversible strategy at the mask level and introduces Reversible State Space to capture non-local information. ROBE extends this to the RGB domain, employing a reconstruction network to address conflicting foreground and background regions identified as distortion-prone areas, which arise from their separate estimation by independent modules. As the stages progress, RUN gradually facilitates reversible modeling of foreground and background in both the mask and RGB domains, directing the network's attention to uncertain regions and mitigating false-positive and false-negative results. Extensive experiments demonstrate the superior performance of RUN and highlight the potential of unfolding-based frameworks for COS and other high-level vision tasks. We will release the code and models.   
+>**Abstract:** Existing concealed object segmentation (COS) methods frequently utilize reversible strategies to address uncertain regions. However, these approaches are typically restricted to the mask domain, leaving the potential of the RGB domain underexplored. To address this, we propose the Reversible Unfolding Network (RUN), which applies reversible strategies across both mask and RGB domains through a theoretically grounded framework, enabling accurate segmentation. RUN first formulates a novel COS model by incorporating an extra residual sparsity constraint to minimize segmentation uncertainties. The iterative optimization steps of the proposed model are then unfolded into a multistage network, with each step corresponding to a stage. Each stage of RUN consists of two reversible modules: the Segmentation-Oriented Foreground Separation (SOFS) module and the Reconstruction-Oriented Background Extraction (ROBE) module. SOFS applies the reversible strategy at the mask level and introduces Reversible State Space to capture non-local information. ROBE extends this to the RGB domain, employing a reconstruction network to address conflicting foreground and background regions identified as distortion-prone areas, which arise from their separate estimation by independent modules. As the stages progress, RUN gradually facilitates reversible modeling of foreground and background in both the mask and RGB domains, directing the network's attention to uncertain regions and mitigating false-positive and false-negative results. Extensive experiments demonstrate the superior performance of RUN and highlight the potential of unfolding-based frameworks for COS and other high-level vision tasks.   
 
 ![](featured.png)
 
@@ -36,7 +36,7 @@
 
 > Note that RUN is only tested on Ubuntu OS with the following environments.
 
-- Creating a virtual environment in terminal: `conda create -n FEDER python=3.8`.
+- Creating a virtual environment in terminal: `conda create -n RUN python=3.8`.
 - Installing necessary packages: `conda env create -f environment.yml`
 
 ### 2. Downloading Training and Testing Datasets
@@ -65,11 +65,30 @@ python Test.py  --testsize YOUR_IMAGESIZE  --pth_path YOUR_CHECKPOINTPATH  --tes
 
 ### 6. Results download
 
-The prediction results of our FEDER are stored on [Google Drive](https://drive.google.com/file/d/1OmE2vEegPPTB1JZpj2SPA6BQnXqiuD1U/view?usp=share_link). Please check.
+The prediction results of our RUN are stored on [Google Drive](https://drive.google.com/file/d/1OmE2vEegPPTB1JZpj2SPA6BQnXqiuD1U/view?usp=share_link). Please check.
 
 
 ## 🔍 Results
 
+We achieved state-of-the-art performance on *camouflaged object detection*, *polyp image segmentation*, *medical tubular object segmentation*, and *transparent object detection*. More results can be found in the paper.
+
+<details>
+<summary>Quantitative Comparison (click to expand)</summary>
+
+- Results in Table 1 of the main paper
+  <p align="center">
+  <img width="900" src="fig/fig1.png">
+	</p>
+  </details>
+
+<details>
+<summary>Visual Comparison (click to expand)</summary>
+
+- Results in Figure 4 of the main paper
+  <p align="center">
+  <img width="900" src="fig/fig2.png">
+	</p>
+  </details>
 
 
 
