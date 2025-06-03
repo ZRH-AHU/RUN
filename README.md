@@ -72,6 +72,7 @@ The prediction results of our FEDER are stored on [Google Drive](https://drive.g
 
 
 
+
 ## Related Works
 [Strategic Preys Make Acute Predators: Enhancing Camouflaged Object Detectors by Generating Camouflaged Objects](https://github.com/ChunmingHe/Camouflageator), ICLR 2024.
 
