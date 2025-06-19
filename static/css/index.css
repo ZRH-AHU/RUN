@@ -1,0 +1,325 @@
+
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
+.footer .icon-link {
+    font-size: 25px;
+    color: #000;
+}
+
+.link-block a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dnerf {
+  font-variant: small-caps;
+}
+
+
+.teaser .hero-body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.teaser {
+  font-family: 'Google Sans', sans-serif;
+}
+
+
+.publication-title {
+}
+
+.publication-banner {
+  max-height: parent;
+
+}
+
+.publication-banner video {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  object-fit: fit;
+}
+
+.publication-header .hero-body {
+}
+
+.publication-title {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-authors {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-venue {
+    color: #555;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.publication-awards {
+    color: #ff3860;
+    width: fit-content;
+    font-weight: bolder;
+}
+
+.publication-authors {
+}
+
+.publication-authors a {
+   color: hsl(204, 86%, 53%) !important;
+}
+
+.publication-authors a:hover {
+    text-decoration: underline;
+}
+
+.author-block {
+  display: inline-block;
+}
+
+.publication-banner img {
+}
+
+.publication-authors {
+  /*color: #4286f4;*/
+}
+
+.publication-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+
+    overflow: hidden;
+    border-radius: 10px !important;
+}
+
+.publication-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.publication-body img {
+}
+
+.results-carousel {
+  overflow: hidden;
+}
+
+.results-carousel .item {
+  margin: 5px;
+  overflow: hidden;
+  padding: 20px;
+  font-size: 0;
+}
+
+.results-carousel video {
+  margin: 0;
+}
+
+.slider-pagination .slider-page {
+  background: #000000;
+}
+
+.eql-cntrb { 
+  font-size: smaller;
+}
+
+/* —— 1) Hero 占满视口 —— */
+.hero-viewport {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* —— 2) 背景图 Grid —— */
+.bg-grid {
+  position: absolute;
+  inset: 0;                    /* 等价 top:0;bottom:0;left:0;right:0; */
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-rows: minmax(200px,1fr);
+  z-index: 0;
+}
+.bg-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* —— 3) 半透明遮罩 —— */
+.bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 1;
+}
+
+/* —— 4) 顶层内容 —— */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* 垂直居中 */
+  align-items: center;       /* 水平居中 */
+  text-align: center;
+  padding: 0 1rem;
+}
+.hero-content .title {
+  color: #fff;
+  font-size: 5rem;
+  margin-bottom: 5.2rem;
+}
+.hero-content .subtitle {
+  color: #ddd;
+  font-size: 3.25rem;
+  margin-bottom: 4.5rem;
+}
+.hero-content .buttons .button {
+  margin: 0 1rem;
+}
+
+/* —— 5) 滚动提示 —— */
+.scroll-down {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-size: 3.9rem;
+  margin-top: 20rem;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity .3s;
+}
+.scroll-down:hover {
+  opacity: 1;
+}
+.scroll-down .arrow {
+  font-size: 1.5rem;
+  display: block;
+  transform: translateY(0);
+  animation: bounce 1.5s infinite;
+}
+@keyframes bounce {
+  0%,100% { transform: translateY(0); }
+   50%    { transform: translateY(8px); }
+}
+
+/* —— 6) 全局平滑滚动 —— */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 作者行间距 */
+.authors-row {
+  margin: -2rem 0 1rem;
+}
+
+/* 作者链接样式 */
+.author-link {
+  color: #ddd;
+  font-size: 1.95rem;
+  text-decoration: none;
+}
+.author-link:hover {
+  text-decoration: underline;
+}
+
+/* sup 标注倾斜并稍微缩小 */
+.authors-row sup {
+  font-size: 0.7em;
+  vertical-align: super;
+}
+/* 外层裁切容器，只露出一屏宽度 */
+.bg-grid-wrapper {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+/* 内层轨道：两组*8 列 = 16 列，宽度刚好 200% */
+.bg-grid {
+  display: grid;
+  width: 300%;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: minmax(100px, 1fr); /* 或你想要的高度范围 */
+  animation: slideGrid 10s linear infinite;
+}
+
+/* 保证图片铺满各自格子，无缝对接 */
+.bg-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+/* 核心动画：0 → -50%（200% 宽度的一半 = 100% 视口宽度） */
+@keyframes slideGrid {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+
+
+/* —— 把 teaser 区域的图片放大 3 倍 —— */
+.teaser .hero-body img {
+  display: block;               /* 去掉底部空隙 */
+    margin: 0 auto 52rem;               /* 水平居中 */
+  transform: scale(3);          /* 放大 3 倍 */
+  transform-origin: center top; /* 以图片顶部中心为缩放原点 */
+  /* 如果想让用户看到完整放大后的内容，可以允许溢出 */
+  /* overflow: visible; */
+}
+/* teaser 区域的副标题，分两行显示，字体更大，保持正常比例 */
+.teaser .hero-body .subtitle {
+  font-size: 3rem;
+  line-height: 1.4;
+  transform: none;
+  max-width: 80%;
+  margin: 1.5rem 0 0 30%;
+  text-align: center;   /* ← 改为 center */
+}
+/* —— 放大 Abstract 区域的段落文字 —— */
+.section.hero.is-light .column.is-four-fifths .content p {
+  font-size: 2.25rem;    /* 按需调：1.25rem ~ 1.5rem */
+  line-height: 1.75;     /* 行高加大，阅读更舒适 */
+  margin-bottom: 1.5rem; /* 段后留白 */
+}
+
+
+/* —— 让 BibTeX 区域宽度占一半并居中 —— */
+#BibTeX .container.is-fluid {
+  width: 80%;      /* 占父容器宽度的一半 */
+  margin: 0 auto;  /* 左右自动居中 */
+}
+/* —— 强制放大 BibTeX 代码字体 —— */
+#BibTeX .container.is-fluid pre,
+#BibTeX .container.is-fluid pre code {
+  font-size: 40.5rem !important;   /* 调整到你想要的大小 */
+  line-height: 1.4 !important;    /* 适当的行高 */
+}
+
+
+/* —— 放大 image-zoom2x 里的那张图到两倍 —— */
+.image-zoom2x img {
+  display: block;              /* 去掉底部缝隙 */
+  width: 700% !important;      /* 宽度为原来的 200% */
+  height: auto !important;     /* 高度按比例 */
+  object-fit: cover;           /* 保持裁切比例 */
+  transform-origin: center;    /* 以中心为基点放大 */
+}
+
