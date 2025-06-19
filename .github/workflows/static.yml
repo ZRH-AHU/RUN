@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>RUN: Reversible Unfolding Network for Concealed Object Segmentation</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+
+  <!-- 在 <body> 里最上面放这个 -->
+<section id="hero" class="hero-viewport">
+  <!-- 1) 背景图拼贴 -->
+<div class="bg-grid-wrapper">
+  <div class="bg-grid">
+    <!-- 第一遍 8 张 -->
+    <img src="static/images/屏幕截图5.png" alt="">
+  <img src="static/images/屏幕截图2.png" alt="">
+  <img src="static/images/屏幕截图3.png" alt="">
+  <img src="static/images/屏幕截图4.png" alt="">
+  <!-- 复制一遍，形成“尾接头” -->
+  <img src="static/images/屏幕截图5.png" alt="">
+  <img src="static/images/屏幕截图2.png" alt="">
+  <img src="static/images/屏幕截图3.png" alt="">
+  <img src="static/images/屏幕截图4.png" alt="">
+
+  </div>
+</div>
+
+  <!-- 2) 半透明遮罩 -->
+  <div class="bg-overlay"></div>
+
+  <!-- 3) 顶层内容：标题、按钮、滚动提示 -->
+  <div class="hero-content">
+    <h1 class="title">RUN: Reversible Unfolding Network for Concealed Object Segmentation</h1>
+    <h2 class="subtitle">ICML 25 </h2>
+    <div class="columns is-centered is-mobile authors-row">
+    <div class="column is-narrow has-text-centered">
+      <a href="#" class="author-link">Chunming He,<sup></sup></a>
+    </div>
+    <div class="column is-narrow has-text-centered">
+      <a href="#" class="author-link">Rihan Zhang,</a>
+    </div>
+    <div class="column is-narrow has-text-centered">
+      <a href="#" class="author-link">Fengyang Xiao,</a>
+    </div>
+    <div class="column is-narrow has-text-centered">
+      <a href="#" class="author-link">Chengyu Fang,<sup></sup></a>
+    </div>
+    <div class="column is-narrow has-text-centered">
+      <a href="#" class="author-link">Longxiang Tang,<sup></sup></a>
+    </div>
+    <div class="column is-narrow has-text-centered">
+      <a href="#" class="author-link">Yulun Zhang,</a>
+    </div>
+    <div class="column is-narrow has-text-centered">
+      <a href="#" class="author-link">Linghe Kong,</a>
+    </div>
+    <div class="column is-narrow has-text-centered">
+      <a href="#" class="author-link">Deng-Ping Fan,<sup></sup></a>
+    </div>
+    <div class="column is-narrow has-text-centered">
+      <a href="#" class="author-link">Kai Li,<sup></sup></a>
+    </div>
+    <div class="column is-narrow has-text-centered">
+      <a href="#" class="author-link">Sina Farsiu<sup></sup></a>
+    </div>
+  </div>
+    <div class="buttons">
+      <a class="button is-medium" href="https://arxiv.org/pdf/2501.18783">Paper</a>
+<!--      <a class="button is-medium" href="#supp">Supp</a>-->
+      <a class="button is-medium" href="https://github.com/ChunmingHe/RUN">Code</a>
+      <a class="button is-medium" href="#Bibtex">BibTex</a>
+    </div>
+    <a href="#overview" class="scroll-down">
+      <span class="arrow">⌄</span>
+      Click to learn more
+    </a>
+  </div>
+</section>
+
+<!-- 下面就是页中内容，你可以给它一个锚点，比如 id="overview" -->
+<section id="overview">
+  … 具体的介绍段落 …
+</section>
+
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+
+      <!-- 1) 图像保持原来铺满容器的样式 -->
+      <figure class="image">
+        <img src="static/images/img.png" alt="MY ALT TEXT" />
+      </figure>
+
+      <!-- 2) 占位的空 subtitle（如果不需要可以删掉） -->
+      <h2 class="subtitle has-text-centered"></h2>
+
+      <!-- 3) 把文本放在一个居中的 column 里 -->
+      <div class="columns">
+        <div class="column">  <!-- 这里 3/4 宽，你可以换成 is-two-thirds、is-half 等 -->
+          <h2 class="subtitle has-text-justified">
+            Framework of our RUN.
+          </h2>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-fluid">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Existing concealed object segmentation (COS) methods frequently utilize reversible strategies,e.g., background reversible attention and foreground-background reversible calibration, to address uncertain regions. However, these approaches are typically restricted to the mask domain, leaving the potential of the RGB domain underexplored.
+To address this, we propose the Reversible Unfolding Network (RUN), which applies reversible strategies across both mask and RGB domains through a theoretically grounded framework, enabling accurate segmentation.RUN first formulates a novel COS model by incorporating an extra residual sparsity constraint to minimize segmentation uncertainties. The iterative optimization steps of the proposed model are then unfolded into a multistage network, with each step corresponding to a stage. Each stage of RUN consists of two reversible modules: the Segmentation-Oriented Foreground Separation (SOFS) module and the Reconstruction-Oriented Background Extraction (ROBE) module. SOFS applies the reversible strategy at the mask level and introduces Reversible State Space to capture non-local information. ROBE extends this to the RGB domain, employing a reconstruction network to address conflicting foreground and background regions identified as distortion-prone areas, which arise from their separate estimation by independent modules. As the stages progress, RUN gradually facilitates reversible modeling of foreground and background in both the mask and RGB domains, directing the network's attention to uncertain regions and mitigating false-positive and false-negative results. Extensive experiments demonstrate the superior performance of RUN and highlight the potential of unfolding-based frameworks for COS and other high-level vision tasks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Carousel Title -->
+<section class="section">
+  <div class="container is-max-desktop has-text-centered">
+    <h2 class="title is-9">
+      <span class="icon"><i class="fas fa-image"></i></span>
+      Visual comparison on COD, PIS, MTOS, and TOD tasks
+      <span class="icon"><i class="fas fa-image"></i></span>
+    </h2>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-mobile is-vcentered is-centered">
+      <div class="column is-narrow has-text-centered">
+        <figure class="image is-inline-block image-zoom2x"
+        style="margin-top: 1rem; margin-bottom: 2rem">
+  <img src="static/images/result(1)(1).png"
+       alt="Image 1"
+       style="transform: scale(1.3); transform-origin: center; display: block;">
+</figure>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Carousel Title -->
+<section class="section" style="margin-bottom: -6rem;">
+  <div class="container is-max-desktop has-text-centered">
+    <h2 class="title is-9">
+      <span class="icon"><i class="fas fa-image"></i></span>
+      Animated Visualization on the COD Task
+      <span class="icon"><i class="fas fa-image"></i></span>
+    </h2>
+  </div>
+</section>
+
+  <section class="section">
+  <div class="container">
+    <div class="columns is-mobile is-vcentered is-centered">
+      <div class="column is-narrow has-text-centered">
+
+
+        <!-- 新增的 MP4 视频 -->
+        <figure class="image is-inline-block"
+                style="margin-top: 1rem; margin-bottom: 2rem">
+          <video
+            src="static/gif1/20250619_144950.mp4"
+            controls
+            autoplay
+            loop
+            muted
+            style="width: 100%; height: auto; display: block;">
+            您的浏览器不支持 video 标签。
+          </video>
+        </figure>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--&lt;!&ndash; Carousel Title &ndash;&gt;-->
+<!--<section class="section">-->
+<!--  <div class="container is-max-desktop has-text-centered">-->
+<!--    <h2 class="title is-9" style="white-space: nowrap;">-->
+<!--      <span class="icon"><i class="fas fa-image"></i></span>-->
+<!--      The outstanding performance of RUN in accurately segmenting concealed objects-->
+<!--      <span class="icon"><i class="fas fa-image"></i></span>-->
+<!--    </h2>-->
+<!--  </div>-->
+<!--</section>-->
+
+
+<!--<section class="section">-->
+<!--  <div class="container">-->
+<!--    <div class="columns is-mobile is-vcentered is-centered">-->
+<!--      <div class="column is-narrow has-text-centered">-->
+<!--        <figure class="image is-inline-block image-zoom2x"-->
+<!--        style="margin-top: 1.5rem; margin-bottom: 2rem">-->
+<!--  <img src="static/images/屏幕截图6.png"-->
+<!--       alt="Image 1"-->
+<!--       style="transform: scale(1.25); transform-origin: center; display: block;">-->
+<!--</figure>-->
+
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container ">
+      <h2 class="title">BibTeX</h2>
+      <pre><code style="font-size:2em; line-height:1.4; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;">
+@article{he2025run,
+  title={RUN: Reversible Unfolding Network for Concealed Object Segmentation},
+  author={He, Chunming and Zhang, Rihan and Xiao, Fengyang and Fang, Chenyu and Tang, Longxiang and Zhang, Yulun and Kong, Linghe and Fan, Deng-Ping and Li, Kai and Farsiu, Sina},
+  journal={ICML},
+  year={2025}
+}
+      </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+<!--  <footer class="footer">-->
+<!--  <div class="container">-->
+<!--    <div class="columns is-centered">-->
+<!--      <div class="column is-8">-->
+<!--        <div class="content">-->
+
+<!--          <p>-->
+<!--            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.-->
+<!--            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative-->
+<!--            Commons Attribution-ShareAlike 4.0 International License</a>.-->
+<!--          </p>-->
+
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</footer>-->
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
